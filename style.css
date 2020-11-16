@@ -14,25 +14,46 @@ img {
 .container {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .body__head {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 150px;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 .body__head h1 {
   font-size: 55px;
-  margin: 10px;
-  margin-bottom: 150px;
+  margin: 5px;
 }
 
+hr {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.caption {
+  color: gray;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.caption a {
+  color: gray;
+}
 .submission__info__box {
   display: flex;
   justify-content: space-between;
   margin: 0 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   padding: 0 10px;
+  width: 100%;
 }
 
 .submission__info__box span {
@@ -40,20 +61,37 @@ img {
 }
 .project__container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   margin: 10px;
   padding: 5px;
+  width: 100%;
+}
+.head {
+  align-items: flex-start;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.margin {
+  margin: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
 }
 
 .components__used {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-.components__used ul {
-  margin: 10px 50px;
-  margin-bottom: 30px;
+.components__used h1 {
+  margin-bottom: 10px;
+}
+.components__used p {
+  margin-left: 50px;
 }
 
 .about__project p {
@@ -67,9 +105,11 @@ img {
   align-items: center;
   margin: 10px;
   color: gray;
+  margin-top: 20px;
+  margin-bottom:20px ;
 }
 .footer a {
-  color: gray;
+  color: gray !important;
 }
 .footer a:hover {
   color: black;

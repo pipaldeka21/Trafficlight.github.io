@@ -5,14 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container margin-bottom">
       <div class="body__head">
         <h1>Four-way Traffic Light System</h1>
+        <hr />
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="nav-item"><a href="#project">Simulation</a></li>
+          <li class="nav-item"><a href="#component">Components used</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="image__conatiner margin-bottom">
+        <img src="Images/trafficlight-inline.webp" alt="" />
+        <p class="caption">
+          A normal traffic light.
+          <i>image courtesy: <a href="www.wired.com">www.wired.com</a></i>
+        </p>
       </div>
 
-      <div class="submission__info__box">
+      <a id="component">
+        <div class="components__used">
+          <h1>The components used in this project are -</h1>
+          <p>
+            LCD screen, Breadboard, Arduino UNO, LED Red and LED Green, Wires.
+          </p>
+        </div>
+      </a>
+
+      <a id="project">
+        <div class="project__container margin-bottom">
+          <div class="head">Project Simulation</div>
+          <iframe
+            width="900"
+            height="600"
+            src="https://www.tinkercad.com/embed/3ZMMFxJi5Re?editbtn=1"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+            scrolling="no"
+            class="margin"
+          ></iframe>
+        </div>
+      </a>
+      <a id="about">
+        <div class="about__project margin-bottom">
+          <h2>About the project:</h2>
+          <p>
+            Here, we took 8 LEDs, 4 of Green and 4 of Red colour. We connected
+            them to the Arduino board as OUTPUT pin. Here, after every 30
+            seconds, traffic lights in alternate roads glow up as shown in the
+            diagram. In the next thirty seconds, the pair of light which is
+            turned off will lit up and the roads will be opened.
+          </p>
+
+          <p>
+            We have also added a LCD display in the circuit which will display
+            the time left for the singal to change. We programmed the board
+            according to that to display numbers till thirty seconds and then
+            again start from 0.
+          </p>
+        </div>
+      </a>
+      <hr >
+      <div class="submission__info__box margin-bottom">
         <div class="box__left center">
           <span>Guided by</span>
           <span>Maitrayee Handique</span>
@@ -24,47 +84,6 @@
           <span> Pipal R. Deka </span>
           <span> Mahir D. Chaudhry </span>
         </div>
-      </div>
-
-      <div class="project__container">
-        <iframe
-          width="900"
-          height="600"
-          src="https://www.tinkercad.com/embed/3ZMMFxJi5Re?editbtn=1"
-          frameborder="0"
-          marginwidth="0"
-          marginheight="0"
-          scrolling="no"
-          class="block"
-        ></iframe>
-      </div>
-      <div class="components__used">
-        <h1>The components used in this project are -</h1>
-        <ul>
-          <li>LCD screen</li>
-          <li>Breadboard.</li>
-          <li>Arduino UNO.</li>
-          <li>LED Red and LED Green.</li>
-          <li>Wires.</li>
-        </ul>
-      </div>
-
-      <div class="about__project">
-        <h2>About the project:</h2>
-        <p>
-          Here, we took 8 LEDs, 4 of Green and 4 of Red colour. We connected
-          them to the Arduino board as OUTPUT pin. Here, after every 30 seconds,
-          traffic lights in alternate roads glow up as shown in the diagram. In
-          the next thirty seconds, the pair of light which is turned off will
-          lit up and the roads will be opened.
-        </p>
-
-        <p>
-          We have also added a LCD display in the circuit which will display the
-          time left for the singal to change. We programmed the board according
-          to that to display numbers till thirty seconds and then again start
-          from 0.
-        </p>
       </div>
     </div>
     <footer class="footer">
